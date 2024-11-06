@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Paper Details{% endblock %}
+
+{% block content %}
+<h1 style = "text-align: center">{{ paper.title }}</h1>
+<p style = "text-align: center">{{ paper.abstract }}</p>
+
+<div  class= "comment-section">
+<h2 class = "comment-section">Comments:</h2>
+{% for comment in comments %}
+    
+        <p><strong>{{ comment.author.username }}:</strong> {{ comment.text }}</p>
+        <p><small>{{ comment.created_at }}</small></p>
+{% endfor %}
+</div>
+
+<h3>Leave a Comment</h3>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Post Comment</button>
+</form>
+{% endblock %}

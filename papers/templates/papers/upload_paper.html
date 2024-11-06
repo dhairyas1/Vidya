@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Research Paper</title>
+</head>
+<body>
+    <h1>Upload Research Paper</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+    <a href="{% url 'paper_list' %}">Back to papers list</a>
+</body>
+</html>

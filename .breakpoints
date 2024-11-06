@@ -1,0 +1,20 @@
+{
+  "files": {
+    "accounts/static/accounts/styles.css": [
+      {
+        "id": "e23ff4a3-1926-472e-949d-203f2d70017a",
+        "line": 2,
+        "version": 298,
+        "index": 1
+      }
+    ],
+    "accounts/templates/base.html": [
+      {
+        "id": "0b5b122c-ced2-4ea3-b097-b666bb9bb2d4",
+        "line": 23,
+        "version": 206,
+        "index": 829
+      }
+    ]
+  }
+}

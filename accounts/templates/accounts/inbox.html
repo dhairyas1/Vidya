@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Inbox</h2>
+<p> <a href="{% url 'send_message' %}" class="btn btn-primary">Send Message</a> </p>
+<ul>
+    {% for message in messages %}
+        <li>
+            <strong>{{ message.sender.username }}</strong>: {{ message.content }} 
+            <em>({{ message.timestamp }})</em>
+        </li>
+    {% empty %}
+        <li>No messages.</li>
+    {% endfor %}
+    
+{% endblock %}
+</ul>
