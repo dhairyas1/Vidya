@@ -1,7 +1,3 @@
-Here's the updated README without the Contributing section and with credit to Shloak Gupta.
-
----
-
 # Research Paper Repository
 
 A platform created for the DPS R.K. Puram Hackathon, allowing users to share, categorize, and interact with research papers within a like-minded community. Built with Django, this platform enables users to upload, comment on, and discuss research papers.
@@ -66,6 +62,7 @@ All file uploads are securely stored on the server you’re hosting. Users do no
 - **Browse and Discuss**: Browse papers by category, and engage with others by commenting and chatting.
 - **Collaboration**: Use the chat feature to connect with researchers who share your interests.
 
+[Run the website on incognito for best performance.]
 ---
 
 ### Credits
